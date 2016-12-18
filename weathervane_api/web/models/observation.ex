@@ -1,14 +1,15 @@
 defmodule WeathervaneApi.Observation do
   use WeathervaneApi.Web, :model
 
-  schema "observations" do
+  @primary_key {:id, :binary_id, autogenerate: true}
+
+  schema "observation" do
     field :date, Ecto.Date
     field :location, :string
     field :high, :integer
     field :low, :integer
-    field :precip, :float
+    field :precip, :decimal
 
-    timestamps()
   end
 
   @doc """
