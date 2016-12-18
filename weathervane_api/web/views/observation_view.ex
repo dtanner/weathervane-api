@@ -12,8 +12,8 @@ defmodule WeathervaneApi.ObservationView do
   def render("observation.json", %{observation: observation}) do
     %{date: observation.date,
       location: observation.location,
-      high: observation.high,
-      low: observation.low,
-      precip: observation.precip}
+      high_f: observation.high,
+      low_f: observation.low,
+      precip_inches: observation.precip}
   end
 end
