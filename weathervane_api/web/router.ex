@@ -23,5 +23,6 @@ defmodule WeathervaneApi.Router do
     pipe_through :api
 
     get "/observations", ObservationController, :index
+    get "/predictions", PredictionController, :index
   end
 end

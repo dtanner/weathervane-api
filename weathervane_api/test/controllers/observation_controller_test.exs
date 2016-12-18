@@ -15,10 +15,4 @@ defmodule WeathervaneApi.ObservationControllerTest do
   end
 
 
-  test "renders page not found when id is nonexistent", %{conn: conn} do
-    assert_error_sent 404, fn ->
-      get conn, observation_path(conn, :show, -1)
-    end
-  end
-
 end
