@@ -19,9 +19,9 @@ defmodule WeathervaneApi.Router do
     get "/", PageController, :index
   end
 
-   scope "/api", WeathervaneApi do
-     pipe_through :api
+  scope "/api", WeathervaneApi do
+    pipe_through :api
 
-#     get "/api/observations", ObservationController, :index
-   end
+    get "/observations", ObservationController, :index
+  end
 end
