@@ -1,7 +1,7 @@
 defmodule WeathervaneApi.PredictionControllerTest do
   use WeathervaneApi.ConnCase
 
-  alias WeathervaneApi.Prediction
+#  alias WeathervaneApi.Prediction
   @valid_attrs %{days_before: 42, high: 62, location: "MSP", low: 42, pop: "120.5", provider: "aeris", target_date: %{day: 17, month: 4, year: 2010}}
   @invalid_attrs %{}
 

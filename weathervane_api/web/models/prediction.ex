@@ -1,6 +1,8 @@
 defmodule WeathervaneApi.Prediction do
   use WeathervaneApi.Web, :model
 
+  @primary_key {:id, :binary_id, autogenerate: true}
+
   schema "prediction" do
     field :predicted_on, Ecto.DateTime
     field :target_date, Ecto.Date
